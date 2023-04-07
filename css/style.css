@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+:root {
+  --col-bg: hsl(185, 41%, 84%);
+  --col-white: hsl(0, 0%, 100%);
+  ---col-bg-input: hsl(189, 41%, 97%);
+  --col--bg-tips: hsl(183, 100%, 15%);
+  --col-primary: hsl(172, 67%, 45%);
+  --col-text: hsl(186, 14%, 43%);
+  --col-text-input: hsl(184, 14%, 56%); }
+
 *,
 *::after,
 *::before {
@@ -11,9 +21,34 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.2rem;
-  min-height: 100vh;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.4rem;
+  background-color: var(--col-bg); }
 
 img {
   width: 100%;
   display: block; }
+
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3rem; }
+  .tip__header {
+    color: var(--col-text);
+    padding-bottom: 3rem; }
+  .tip__container {
+    max-width: 80rem;
+    background-color: var(--col-white);
+    border-radius: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; }
+    .tip__container .tip__result {
+      background-color: var(--col--bg-tips);
+      border-radius: 1rem;
+      padding: 3rem; }
