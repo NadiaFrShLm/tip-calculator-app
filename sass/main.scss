@@ -114,7 +114,8 @@ h3 {
           gap: 1.4rem;
         }
 
-        span {
+        .tip__percent {
+          font-family: inherit;
           background-color: var(--col--bg-tips);
           color: var(--col-bg-input);
           padding: 0.5rem;
@@ -122,6 +123,7 @@ h3 {
           border-radius: 0.4rem;
           text-align: center;
           transition: all 0.2s ease-in-out;
+          border: none;
           cursor: pointer;
 
           &:last-child {

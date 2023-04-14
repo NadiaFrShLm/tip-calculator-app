@@ -28,6 +28,7 @@
               class="tip__bill"
               placeholder="0"
               name="bill"
+              value=""
               oninput="this.value = this.value.replace(/[^0-9.]/g,
             '').replace(/(\..*?)\..*/g, '$1');"
               required
@@ -41,12 +42,12 @@
 
           <h3>Select Tip %</h3>
           <div class="tip__selectWrapper">
-            <span>5%</span>
-            <span>10%</span>
-            <span>15%</span>
-            <span>25%</span>
-            <span>50%</span>
-            <span>Custom</span>
+            <button class="tip__percent" value="5">5%</button>
+            <button class="tip__percent" value="10">10%</button>
+            <button class="tip__percent" value="15">15%</button>
+            <button class="tip__percent" value="25">25%</button>
+            <button class="tip__percent" value="50">50%</button>
+            <button class="tip__percent" value="custom">Custom</button>
           </div>
 
           <h3>Number of People</h3>
@@ -58,7 +59,9 @@
               class="tip__peoples"
               placeholder="0"
               name="peopeles"
+              value=""
               oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');"
+              required
             />
             <img
               class="tip__icon"
@@ -73,18 +76,19 @@
           <!-- tips per person -->
           <div class="tip__result">
             <h3>Tip Amount <span>/ person</span></h3>
-            <p class="tip__amount"><span>$</span>0.00</p>
+            <p class="tip__amount">$<span class="amount">0.00</span></p>
           </div>
 
           <!-- total to pay -->
           <div class="tip__result">
             <h3>Total <span>/ person</span></h3>
-            <p class="tip__amount">$<span>0.00</span></p>
+            <p class="tip__amount">$<span class="total">0.00</span></p>
           </div>
 
           <button class="tip__reset">RESET</button>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

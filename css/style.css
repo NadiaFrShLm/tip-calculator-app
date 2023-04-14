@@ -104,7 +104,8 @@ h3 {
           .tip__container .tip__calcul .tip__selectWrapper {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.4rem; } }
-        .tip__container .tip__calcul .tip__selectWrapper span {
+        .tip__container .tip__calcul .tip__selectWrapper .tip__percent {
+          font-family: inherit;
           background-color: var(--col--bg-tips);
           color: var(--col-bg-input);
           padding: 0.5rem;
@@ -112,16 +113,17 @@ h3 {
           border-radius: 0.4rem;
           text-align: center;
           transition: all 0.2s ease-in-out;
+          border: none;
           cursor: pointer; }
-          .tip__container .tip__calcul .tip__selectWrapper span:last-child {
+          .tip__container .tip__calcul .tip__selectWrapper .tip__percent:last-child {
             background-color: var(--col-bg-input);
             color: var(--col--bg-tips); }
-            .tip__container .tip__calcul .tip__selectWrapper span:last-child:hover {
+            .tip__container .tip__calcul .tip__selectWrapper .tip__percent:last-child:hover {
               background-color: var(--col-bg); }
-          .tip__container .tip__calcul .tip__selectWrapper span:hover {
+          .tip__container .tip__calcul .tip__selectWrapper .tip__percent:hover {
             background-color: var(--col-primary);
             color: var(--col--bg-tips); }
-          .tip__container .tip__calcul .tip__selectWrapper span:active {
+          .tip__container .tip__calcul .tip__selectWrapper .tip__percent:active {
             transform: scale(0.99) translateY(2px); }
     .tip__container .tip__resultWraper {
       background-color: var(--col--bg-tips);
