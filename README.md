@@ -31,8 +31,12 @@ Users should be able to:
 ### Screenshot
 
 - Desktop: 1440px
+![Screenshot 2023-04-14 at 14 54 03](https://user-images.githubusercontent.com/84836971/232050255-a197f2b3-503e-4c17-8633-e87fad6c4a66.png)
+
 
 - Mobile: 375px
+![Screenshot 2023-04-14 at 14 54 25](https://user-images.githubusercontent.com/84836971/232050294-c6d3f5d9-e54d-47a3-94b6-4cf974622674.png)
+
 
 ### Links
 
